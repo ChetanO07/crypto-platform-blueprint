@@ -627,3 +627,4 @@ document.addEventListener('DOMContentLoaded', () => {
     app.showPage(initialHash);
   }
 });
+

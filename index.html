@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xtin Exchange - Trade Crypto Futures & Options</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath fill='%236C5CE7' d='M16 2L24 10L16 18L8 10z'/%3E%3Cpath fill='%2300D4AA' d='M16 14L24 22L16 30L8 22z'/%3E%3C/svg%3E" alt="Xtin Exchange" />
+          <span>Xtin Exchange</span>
+        </div>
+        <div class="nav-menu">
+          <div class="nav-dropdown">
+            <button class="nav-link">Markets <span class="dropdown-arrow">▾</span></button>
+            <div class="dropdown-menu">
+              <a href="#" data-page="futures">Futures</a>
+              <a href="#" data-page="options">Options</a>
+              <a href="#" data-page="move">MOVE Contracts</a>
+            </div>
+          </div>
+          <a href="#" class="nav-link" data-page="futures">Futures</a>
+          <a href="#" class="nav-link" data-page="options">Options</a>
+          <a href="#" class="nav-link new-badge">NEW</a>
+          <a href="#" class="nav-link">Trackers</a>
+          <a href="#" class="nav-link">AlgoHub</a>
+          <a href="#" class="nav-link">More</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="btn btn-secondary" data-page="kyc">Sign Up</button>
+        <button class="btn btn-primary" data-page="trading">Trade Now</button>
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Application Container -->
+  <main id="app">
+    <!-- Homepage -->
+    <section id="homepage" class="page active">
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">Made for INDIA</div>
+            <h1 class="hero-title">Trade Futures & Options on Bitcoin and Ether</h1>
+            <div class="hero-features">
+              <div class="feature-item">
+                <span class="feature-icon">🚀</span>
+                <span>Trade Crypto without owning it</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">₹</span>
+                <span>Margin &amp; P/L in INR</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">💰</span>
+                <span>Deposit INR, Withdraw INR</span>
+              </div>
+            </div>
+            <div class="compliance-badge">
+              <span class="fiu-badge">FIU-IND Registered</span>
+              <span>Compliant with Indian Financial Intelligence Unit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Price Ticker -->
+      <div class="ticker-container">
+        <div class="ticker-content">
+          <div class="ticker-item">
+            <span class="symbol">BTC-USDT</span>
+            <span class="price positive">$43,250.50</span>
+            <span class="change positive">+2.35%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="symbol">ETH-USDT</span>
+            <span class="price positive">$2,650.75</span>
+            <span class="change positive">+1.89%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="symbol">SOL-USDT</span>
+            <span class="price negative">$85.42</span>
+            <span class="change negative">-0.85%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="symbol">AVAX-USDT</span>
+            <span class="price positive">$24.83</span>
+            <span class="change positive">+3.21%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Features -->
+      <div class="features-section">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-bg bg-purple">📈</div>
+              <h3>Futures</h3>
+              <p>Trade perpetual and quarterly futures on 50+ crypto assets with up to 100x leverage</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-bg bg-green">⚡</div>
+              <h3>Options</h3>
+              <p>European vanilla options with expiry up to 12 months on BTC and ETH</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-bg bg-orange">📊</div>
+              <h3>MOVE Contracts</h3>
+              <p>Trade pure volatility with daily and weekly MOVE contracts</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-bg bg-blue">🎯</div>
+              <h3>Trackers</h3>
+              <p>Structured products that track various crypto indices and themes</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-bg bg-red">🤖</div>
+              <h3>AlgoHub</h3>
+              <p>Automated trading strategies and copy trading from top performers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Easy Sign Up -->
+      <div class="signup-section">
+        <div class="container">
+          <h2>Easy Sign Up Process</h2>
+          <div class="signup-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <h4>Complete KYC Verification</h4>
+              <p>Upload your PAN, Aadhaar and complete video KYC in under 5 minutes</p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <h4>Link Bank Account</h4>
+              <p>Add your bank account for seamless INR deposits and withdrawals</p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <h4>Deposit INR</h4>
+              <p>Fund your account instantly using UPI, IMPS, or NEFT transfers</p>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <h4>Start Trading</h4>
+              <p>Begin trading futures and options with advanced tools and features</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Annotation -->
+      <div class="tech-annotation">
+        <h4>Business Model: User Acquisition &amp; Trust Building</h4>
+        <p><strong>Tech Stack:</strong> React.js, Next.js, Node.js, PostgreSQL, Redis</p>
+        <p><strong>Team:</strong> Frontend Developer, Growth Engineer, UX Designer, Compliance Officer</p>
+      </div>
+    </section>
+
+    <!-- Trading Dashboard -->
+    <section id="trading" class="page">
+      <div class="trading-header">
+        <div class="trading-nav">
+          <span class="trading-pair active">BTC-USDT-PERP</span>
+          <span class="trading-pair">ETH-USDT-PERP</span>
+          <span class="trading-pair">SOL-USDT-PERP</span>
+        </div>
+        <div class="trading-stats">
+          <span class="stat">Last: <span class="price positive">$43,250.50</span></span>
+          <span class="stat">24h: <span class="positive">+2.35%</span></span>
+          <span class="stat">Volume: 2.1B</span>
+        </div>
+      </div>
+
+      <div class="trading-layout">
+        <div class="orderbook-panel">
+          <div class="panel-header">
+            <h4>Order Book</h4>
+            <select class="precision-select">
+              <option>0.1</option>
+              <option>1.0</option>
+              <option>10.0</option>
+            </select>
+          </div>
+          <div class="orderbook">
+            <div class="orderbook-header">
+              <span>Price (USDT)</span>
+              <span>Amount (BTC)</span>
+              <span>Total</span>
+            </div>
+            <div class="asks">
+              <div class="order-row ask">
+                <span class="price">43,265.00</span>
+                <span class="amount">3.2</span>
+                <span class="total">7.5</span>
+              </div>
+              <div class="order-row ask">
+                <span class="price">43,260.00</span>
+                <span class="amount">1.8</span>
+                <span class="total">4.3</span>
+              </div>
+              <div class="order-row ask">
+                <span class="price">43,255.00</span>
+                <span class="amount">2.5</span>
+                <span class="total">2.5</span>
+              </div>
+            </div>
+            <div class="spread">
+              <span class="spread-value">Spread: 10.00 (0.02%)</span>
+            </div>
+            <div class="bids">
+              <div class="order-row bid">
+                <span class="price">43,245.00</span>
+                <span class="amount">1.9</span>
+                <span class="total">1.9</span>
+              </div>
+              <div class="order-row bid">
+                <span class="price">43,240.00</span>
+                <span class="amount">2.7</span>
+                <span class="total">4.6</span>
+              </div>
+              <div class="order-row bid">
+                <span class="price">43,235.00</span>
+                <span class="amount">1.4</span>
+                <span class="total">6.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-panel">
+          <div class="chart-container">
+            <div class="chart-placeholder">
+              <svg width="100%" height="400" viewBox="0 0 800 400">
+                <rect width="800" height="400" fill="#1A1D29" />
+                <text x="400" y="200" text-anchor="middle" fill="#8B949E" font-size="18">
+                  TradingView Chart Integration
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-panel">
+          <div class="order-tabs">
+            <button class="tab-btn active" data-tab="spot">Spot</button>
+            <button class="tab-btn" data-tab="margin">Margin</button>
+          </div>
+
+          <div class="order-form">
+            <div class="order-type-tabs">
+              <button class="order-type-btn active buy-btn">Buy</button>
+              <button class="order-type-btn sell-btn">Sell</button>
+            </div>
+
+            <div class="order-inputs">
+              <div class="input-group">
+                <label>Order Type</label>
+                <select class="form-input">
+                  <option>Market</option>
+                  <option>Limit</option>
+                  <option>Stop</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label>Price (USDT)</label>
+                <input type="number" class="form-input" placeholder="43,250.50" />
+              </div>
+              <div class="input-group">
+                <label>Amount (BTC)</label>
+                <input type="number" class="form-input" placeholder="0.001" />
+              </div>
+              <div class="input-group">
+                <label>Total (USDT)</label>
+                <input type="number" class="form-input" placeholder="43.25" />
+              </div>
+            </div>
+
+            <button class="order-submit-btn buy">Buy BTC</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-panels">
+        <div class="positions-panel">
+          <div class="panel-header">
+            <h4>Open Positions</h4>
+          </div>
+          <div class="positions-table">
+            <div class="table-header">
+              <span>Symbol</span>
+              <span>Size</span>
+              <span>Entry Price</span>
+              <span>Mark Price</span>
+              <span>PnL</span>
+            </div>
+            <div class="table-row">
+              <span>BTC-USDT</span>
+              <span>2.5</span>
+              <span>$42,850.25</span>
+              <span>$43,250.50</span>
+              <span>$43,250.50</span>
+              <span class="positive">+$1,000.63</span>
+            </div>
+            <div class="table-row">
+              <span>ETH-USDT</span>
+              <span>1.0</span>
+              <span>$2,525.40</span>
+              <span>$2,650.75</span>
+              <span class="positive">+$125.40</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-annotation">
+        <h4>Real-time Trading Engine</h4>
+        <p><strong>Tech Stack:</strong> WebSocket, Redis, Matching Engine, PostgreSQL</p>
+        <p><strong>Team:</strong> Backend Engineer, DevOps, Risk Manager, Frontend Developer</p>
+      </div>
+    </section>
+
+    <!-- Futures Page -->
+    <section id="futures" class="page">
+      <div class="container">
+        <div class="page-header">
+          <h2>Futures Markets</h2>
+          <div class="market-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">BTC</button>
+            <button class="filter-btn">ETH</button>
+            <button class="filter-btn">Altcoins</button>
+          </div>
+        </div>
+        
+        <div class="markets-table">
+          <div class="table-header">
+            <span>Symbol</span>
+            <span>Last Price</span>
+            <span>24h Change</span>
+            <span>24h Volume</span>
+            <span>Open Interest</span>
+            <span>Action</span>
+          </div>
+          <div class="table-row" data-symbol="BTC-USDT">
+            <span class="symbol">BTC-USDT-PERP</span>
+            <span class="price">$43,250.50</span>
+            <span class="change positive">+2.35%</span>
+            <span class="volume">2.1B</span>
+            <span class="oi">$1.2B</span>
+            <button class="trade-btn">Trade</button>
+          </div>
+          <div class="table-row" data-symbol="ETH-USDT">
+            <span class="symbol">ETH-USDT-PERP</span>
+            <span class="price">$2,650.75</span>
+            <span class="change positive">+1.89%</span>
+            <span class="volume">890M</span>
+            <span class="oi">$680M</span>
+            <button class="trade-btn">Trade</button>
+          </div>
+          <div class="table-row" data-symbol="SOL-USDT">
+            <span class="symbol">SOL-USDT-PERP</span>
+            <span class="price">$85.42</span>
+            <span class="change negative">-0.85%</span>
+            <span class="volume">125M</span>
+            <span class="oi">$95M</span>
+            <button class="trade-btn">Trade</button>
+          </div>
+          <div class="table-row" data-symbol="AVAX-USDT">
+            <span class="symbol">AVAX-USDT-PERP</span>
+            <span class="price">$24.83</span>
+            <span class="change positive">+3.21%</span>
+            <span class="volume">67M</span>
+            <span class="oi">$45M</span>
+            <button class="trade-btn">Trade</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-annotation">
+        <h4>Futures Trading Engine</h4>
+        <p><strong>Tech Stack:</strong> Matching Engine, Risk Management System, Market Data Feed</p>
+        <p><strong>Team:</strong> Quantitative Developer, Trading Systems Engineer, Risk Analyst</p>
+      </div>
+    </section>
+
+    <!-- Options Page -->
+    <section id="options" class="page">
+      <div class="container">
+        <div class="page-header">
+          <h2>Options Chain - BTC</h2>
+          <div class="options-controls">
+            <select class="expiry-select">
+          <option>Dec 29, 2025</option>
+          <option>Jan 26, 2025</option>
+          <option>Mar 29, 2025</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="options-chain">
+          <div class="chain-header">
+            <div class="calls-header">CALLS</div>
+            <div class="strike-header">STRIKE</div>
+            <div class="puts-header">PUTS</div>
+          </div>
+          
+          <div class="options-table">
+            <div class="option-row">
+              <div class="calls">
+                <span class="iv">65%</span>
+                <span class="bid">1,630</span>
+                <span class="ask">1,650</span>
+              </div>
+              <div class="strike">60,000</div>
+              <div class="puts">
+                <span class="bid">780</span>
+                <span class="ask">800</span>
+                <span class="iv">70%</span>
+              </div>
+            </div>
+            <div class="option-row">
+              <div class="calls">
+                <span class="iv">62%</span>
+                <span class="bid">1,030</span>
+                <span class="ask">1,050</span>
+              </div>
+              <div class="strike">62,500</div>
+              <div class="puts">
+                <span class="bid">980</span>
+                <span class="ask">1,000</span>
+                <span class="iv">68%</span>
+              </div>
+            </div>
+            <div class="option-row atm">
+              <div class="calls">
+                <span class="iv">60%</span>
+                <span class="bid">710</span>
+                <span class="ask">730</span>
+              </div>
+              <div class="strike">65,000</div>
+              <div class="puts">
+                <span class="bid">1,230</span>
+                <span class="ask">1,260</span>
+                <span class="iv">66%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="strategy-builder">
+          <h3>Strategy Builder</h3>
+          <div class="strategy-placeholder">
+            <svg width="100%" height="200" viewBox="0 0 600 200">
+              <rect width="600" height="200" fill="#1A1D29"/>
+              <text x="300" y="100" text-anchor="middle" fill="#8B949E" font-size="16">
+                Options Strategy Visualization
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-annotation">
+        <h4>Options Pricing Engine</h4>
+        <p><strong>Tech Stack:</strong> Black-Scholes Engine, Greeks Calculator, Volatility Surface</p>
+        <p><strong>Team:</strong> Quantitative Analyst, Derivatives Engineer, Risk Manager</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Page -->
+    <section id="portfolio" class="page">
+      <div class="container">
+        <div class="portfolio-header">
+          <h2>Portfolio Overview</h2>
+          <div class="account-actions">
+            <button class="btn btn-primary">Deposit</button>
+            <button class="btn btn-secondary">Withdraw</button>
+          </div>
+        </div>
+        
+        <div class="portfolio-stats">
+          <div class="stat-card">
+            <h4>Total Value</h4>
+            <span class="value">$24,580.42</span>
+          </div>
+          <div class="stat-card">
+            <h4>Available Balance</h4>
+            <span class="value">$18,120.15</span>
+          </div>
+          <div class="stat-card">
+            <h4>Used Margin</h4>
+            <span class="value">$6,460.27</span>
+          </div>
+          <div class="stat-card">
+            <h4>Unrealized PnL</h4>
+            <span class="value positive">+$1,126.03</span>
+          </div>
+        </div>
+
+        <div class="portfolio-chart">
+          <h3>Performance Chart</h3>
+          <div class="chart-placeholder">
+            <svg width="100%" height="300" viewBox="0 0 800 300">
+              <rect width="800" height="300" fill="#1A1D29"/>
+              <text x="400" y="150" text-anchor="middle" fill="#8B949E" font-size="16">
+                Portfolio Performance Chart
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-annotation">
+        <h4>Portfolio Management System</h4>
+        <p><strong>Tech Stack:</strong> Real-time P&L Calculator, Risk Analytics, Chart.js</p>
+        <p><strong>Team:</strong> Full-stack Developer, Data Analyst, UX Designer</p>
+      </div>
+    </section>
+
+    <!-- Trackers Page -->
+    <section id="trackers" class="page">
+      <div class="container">
+        <div class="page-header">
+          <h2>Trackers</h2>
+          <p>Explore structured products that track various crypto indices and themes.</p>
+        </div>
+        <div class="trackers-list">
+          <div class="tracker-card">
+            <h3>Crypto Index Tracker</h3>
+            <p>Track the top 10 cryptocurrencies by market cap with real-time updates.</p>
+            <button class="btn btn-primary">View Details</button>
+          </div>
+          <div class="tracker-card">
+            <h3>DeFi Tracker</h3>
+            <p>Monitor the performance of leading decentralized finance tokens.</p>
+            <button class="btn btn-primary">View Details</button>
+          </div>
+          <div class="tracker-card">
+            <h3>Stablecoin Tracker</h3>
+            <p>Keep an eye on the major stablecoins and their market dynamics.</p>
+            <button class="btn btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AlgoHub Page -->
+    <section id="algohub" class="page">
+      <div class="container">
+        <div class="page-header">
+          <h2>AlgoHub</h2>
+          <p>Discover automated trading strategies and copy trading from top performers.</p>
+        </div>
+        <div class="algo-list">
+          <div class="algo-card">
+            <h3>Mean Reversion Strategy</h3>
+            <p>A strategy that capitalizes on price reversals to the mean.</p>
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+          <div class="algo-card">
+            <h3>Momentum Strategy</h3>
+            <p>Follow the trend and ride the momentum for potential gains.</p>
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+          <div class="algo-card">
+            <h3>Arbitrage Bot</h3>
+            <p>Exploit price differences across exchanges for risk-free profits.</p>
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KYC Page -->
+    <section id="kyc" class="page">
+      <div class="container">
+        <div class="kyc-container">
+          <div class="kyc-header">
+            <h2>Complete Your KYC Verification</h2>
+            <div class="progress-bar">
+              <div class="progress-step active">1</div>
+              <div class="progress-step">2</div>
+              <div class="progress-step">3</div>
+              <div class="progress-step">4</div>
+            </div>
+          </div>
+
+          <div class="kyc-form">
+            <div class="form-section">
+              <h3>Personal Information</h3>
+              <div class="input-row">
+                <div class="input-group">
+                  <label>Full Name</label>
+                  <input type="text" class="form-input" placeholder="Enter your full name">
+                </div>
+                <div class="input-group">
+                  <label>Date of Birth</label>
+                  <input type="date" class="form-input">
+                </div>
+              </div>
+              <div class="input-group">
+                <label>PAN Number</label>
+                <input type="text" class="form-input" placeholder="ABCDE1234F">
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Document Upload</h3>
+              <div class="upload-grid">
+                <div class="upload-card">
+                  <div class="upload-icon">📄</div>
+                  <h4>PAN Card</h4>
+                  <button class="upload-btn">Upload Front</button>
+                </div>
+                <div class="upload-card">
+                  <div class="upload-icon">🆔</div>
+                  <h4>Aadhaar Card</h4>
+                  <button class="upload-btn">Upload Front</button>
+                </div>
+                <div class="upload-card">
+                  <div class="upload-icon">🏦</div>
+                  <h4>Bank Statement</h4>
+                  <button class="upload-btn">Upload PDF</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Bank Account Details</h3>
+              <div class="input-row">
+                <div class="input-group">
+                  <label>Account Number</label>
+                  <input type="text" class="form-input" placeholder="Enter account number">
+                </div>
+                <div class="input-group">
+                  <label>IFSC Code</label>
+                  <input type="text" class="form-input" placeholder="SBIN0001234">
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-full">Continue to Video KYC</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-annotation">
+        <h4>KYC Verification System</h4>
+        <p><strong>Tech Stack:</strong> Document OCR, Video KYC SDK, Compliance APIs</p>
+        <p><strong>Team:</strong> Compliance Officer, Backend Developer, Security Engineer</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Trading Guide</a>
+          <a href="#">API Docs</a>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Risk Disclosure</a>
+          <a href="#">Compliance</a>
+        </div>
+        <div class="footer-section">
+          <h4>Products</h4>
+          <a href="#">Futures</a>
+          <a href="#">Options</a>
+          <a href="#">MOVE Contracts</a>
+          <a href="#">Trackers</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Xtin Exchange. All rights reserved. | FIU-IND Registration No: 101000012345</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
